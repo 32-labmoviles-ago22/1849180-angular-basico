@@ -1,0 +1,19 @@
+<p>Asistencia:</p>
+
+<ion-list>
+
+    <ion-item *ngFor="let alumno of alumnos"[ngClass]="{'inasistencia': !alumno.presente, 'asistencia': alumno.presente}">
+        {{alumno.nombre}}
+    </ion-item>
+
+</ion-list>
+
+<p>Inasistencia:</p>
+
+<ion-list>
+  
+    <ion-item *ngFor="let alumno of alumnos">
+        <p *ngIf="alumno.presente == false">{{alumno.nombre}}</p>
+    </ion-item>
+
+</ion-list>

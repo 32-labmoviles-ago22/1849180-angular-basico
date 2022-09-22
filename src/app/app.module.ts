@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { IonicModule } from '@ionic/angular';
+import { AlumnosComponent } from './alumnos/alumnos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InicioComponent
+    InicioComponent,
+    AlumnosComponent
   ],
   imports: [
     BrowserModule,
