@@ -2,14 +2,27 @@
 <ion-app>
   <ion-header>
     <ion-toolbar>
-      <ion-title>Lista alumnos: lab moviles grupo 32</ion-title>
+      <ion-title>Lista alumnos: Lab Móviles Grupo 32</ion-title>
     </ion-toolbar>
   </ion-header>
  
   <ion-content class="ion-padding">
-   
-    <app-alumnos></app-alumnos>
-    
-    <!--Aqui vamos a insertar nuestro componente alumnos-->
+    <!--Contenido aquí-->  
   </ion-content>
+    <ion-tabs><!--Contenedor de pestañas-->  
+      <ion-tab-bar><!--Barra al fondo de la página-->  
+
+      <!--Pestañas-->  
+      <ion-tab-button tab="alumnos"> <!--routerLink:"/alumnos"--> 
+        <ion-label>Asistencia de Alumnos</ion-label>
+        <ion-icon name="people"></ion-icon>
+      </ion-tab-button>
+
+      <ion-tab-button tab="materias"> <!--routerLink:"/alumnos"--> 
+        <ion-label>Materias</ion-label>
+        <ion-icon name="book"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+    </ion-tabs>
+
 </ion-app>

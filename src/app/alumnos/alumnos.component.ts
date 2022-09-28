@@ -21,7 +21,7 @@ export class AlumnosComponent implements OnInit {
       
       {
         nombre: "Isaac Briones",
-        presente: true
+        presente: false
       },
       
       {
