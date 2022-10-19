@@ -1,3 +1,27 @@
+<ion-content>
+<form #nuevoAlumnoForm="ngForm" (ngSubmit)="agregarAlumno()">
+<ion-grid>
+    <ion-row>
+        <ion-col>
+            <ion-label>Nombre: <strong>{{nuevoAlumno.nombre}}</strong></ion-label>
+            <ion-input type="text" placeholder="Ejemplo: Alissa Garcia Zarate" [(ngModel)]="nuevoAlumno.nombre" name="nombre"></ion-input>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+        <ion-item>
+            <ion-checkbox name="presente" slot="start" [(ngModel)]="nuevoAlumno.presente"></ion-checkbox>
+            <ion-label>Presente: <strong>{{nuevoAlumno.presente}}</strong></ion-label>
+        </ion-item>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <ion-button class="agregar" (click)="agregarAlumno()" type="submit">Agregar</ion-button>
+        </ion-col>
+    </ion-row>
+</ion-grid>
+</form>
 <ion-button fill="clear" (click)="abrirActionSheet()"><!--Boton de trigger para ActionSheet-->
         <ion-icon name="ellipsis-vertical"></ion-icon>
     </ion-button>
@@ -60,3 +84,4 @@
         </ion-item-sliding>
     
 </ion-list>
+</ion-content>

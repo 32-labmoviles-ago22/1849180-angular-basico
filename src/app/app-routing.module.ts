@@ -7,7 +7,7 @@ import { MateriasComponent } from './materias/materias.component';
 const routes: Routes = [
   {
     path:'',
-    redirectTo:'inicio',
+    redirectTo:'/alumnos',
     pathMatch: 'full'
   },
   {

@@ -9,6 +9,8 @@ import { AlumnosComponent } from './alumnos/alumnos.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { MateriasComponent } from './materias/materias.component';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +21,7 @@ import { MateriasComponent } from './materias/materias.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     IonicModule.forRoot()
   ],

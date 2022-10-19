@@ -1,3 +1,14 @@
 .inasistencia{
     display: none;
 }
+
+ion-button{
+    --background: #F72683;
+    color:white;
+    float: right;
+}
+
+.agregar{
+    float: none;
+}
+

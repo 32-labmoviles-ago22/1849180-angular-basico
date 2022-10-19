@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 import { ActionSheetController } from '@ionic/angular';
+import{Alumno} from '../alumno.model';
 
 interface alumnoasistencia {
   nombre: string;
@@ -18,6 +19,11 @@ export class AlumnosComponent implements OnInit {
 
   ngOnInit(): void {
     //console.log(this.alumnos);
+  }
+
+  onSubmit(){
+    //Agregar a Lista
+    //Limpiar variables
   }
 
   async mensajeAlerta(tipoMensaje: string){
@@ -69,8 +75,16 @@ export class AlumnosComponent implements OnInit {
 
   }
 
+nuevoAlumno: Alumno ={
+    nombre: '',
+    presente: false
+  }
 
-  alumnos: any = [
+  agregarAlumno() {
+    this.alumnos.push(this.nuevoAlumno);
+  }
+
+  alumnos: Alumno[] = [
       {
         nombre: "Edgar Efren",
         presente: false,
