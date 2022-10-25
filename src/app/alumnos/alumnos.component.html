@@ -37,7 +37,7 @@
     'asistencia': alumno.presente}">
             
         <ion-item>
-            <ion-label>{{alumno.nombre}}</ion-label>
+            <ion-label [routerLink]="['/alumno', alumno.nombre]">{{alumno.nombre}}</ion-label>
             <ion-label>{{alumno.matricula}}</ion-label>
         </ion-item>
             
