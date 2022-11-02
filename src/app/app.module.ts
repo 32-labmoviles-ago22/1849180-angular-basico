@@ -9,8 +9,9 @@ import { AlumnosComponent } from './alumnos/alumnos.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { MateriasComponent } from './materias/materias.component';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AlumnoDetalleComponent } from './alumno-detalle/alumno-detalle.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -21,10 +22,12 @@ import { AlumnoDetalleComponent } from './alumno-detalle/alumno-detalle.componen
     TabsComponent,
     MateriasComponent,
     AlumnoDetalleComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     IonicModule.forRoot()
   ],

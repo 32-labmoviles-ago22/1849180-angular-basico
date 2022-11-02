@@ -1,0 +1,22 @@
+<form [formGroup]="loginForm" (ngSubmit)="loginSubmit()">
+    <ion-grid>
+        <ion-row>
+            <ion-col size-md="4" offset-md="4" size="12">
+                <div>
+                    <ion-label>Email: </ion-label><strong>{{loginForm.value.email}}</strong>
+                    <ion-input minlength="1" placeholder="Ejemplo: alissa.faen@gmail.com" required type="text" formControlName="email"></ion-input>
+                </div>
+
+                <div>
+                    <ion-label>Password: </ion-label>
+                    <ion-input placeholder="Ejemplo A0B1C2D3" required minlength="1" type="password" formControlName="password"></ion-input>
+                </div>
+                
+                <div>
+                    <ion-button type="submit" [ngClass]="{'noSubmit': loginForm.invalid}">Iniciar Sesión</ion-button>
+                </div>
+
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</form>
