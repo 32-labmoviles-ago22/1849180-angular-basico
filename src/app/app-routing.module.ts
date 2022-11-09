@@ -5,6 +5,7 @@ import { AlumnosComponent } from './alumnos/alumnos.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { MateriasComponent } from './materias/materias.component';
 import { LoginComponent } from './login/login.component';
+import { RegistroComponent } from './registro/registro.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'registro',
+    component: RegistroComponent
   }
 ];
 

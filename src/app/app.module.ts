@@ -12,6 +12,7 @@ import { MateriasComponent } from './materias/materias.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AlumnoDetalleComponent } from './alumno-detalle/alumno-detalle.component';
 import { LoginComponent } from './login/login.component';
+import { RegistroComponent } from './registro/registro.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { LoginComponent } from './login/login.component';
     MateriasComponent,
     AlumnoDetalleComponent,
     LoginComponent,
+    RegistroComponent,
   ],
   imports: [
     BrowserModule,
